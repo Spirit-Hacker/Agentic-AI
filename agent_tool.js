@@ -61,7 +61,7 @@ const emailSenderTool = new tool({
   },
 });
 
-const weatherTool = new tool({
+const weatherTool = tool({
   name: "get weather",
   description: "returns the weather information of the given city",
   parameters: z.object({
