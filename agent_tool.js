@@ -12,7 +12,7 @@ const GetWeatherResultSchema = z.object({
 });
 
 // TODO: Write a tool to send this weather report to user on email
-const emailSenderTool = new tool({
+const emailSenderTool = tool({
   name: "send_emails",
   description: "sends weather report of the city to user the user",
   parameters: z.object({
